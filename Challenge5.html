@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Challenger</title>
+        <style>
+         #contenedor {
+             display: flex; 
+             background-color: #cccccc;
+             width: 500px;
+             flex-direction: row-reverse;
+             <-- flex-wrap: 2 -->
+
+         }
+         #contenedor div{
+             height: 200px;
+             flex-grow: 1;
+             flex-shrink: 1;
+         }
+
+         #contenedor div:nth-child(1){
+            background-color: grey
+
+         }
+         #contenedor div:nth-child(2){
+            background-color: blue;
+            flex-grow: 2;
+         }
+         #contenedor div:nth-child(2):hover{
+            transition: height 200%
+         }
+         #contenedor div:nth-child(3){
+            background-color: blueviolet
+         }
+         #contenedor div:nth-child(4){
+            background-color: blanchedalmond;
+         }
+         #contenedor div:nth-child(4):hover{
+            background-color:red;
+            transition: background-color 10s;
+         }
+         #contenedor div:nth-child(5){
+            background-color: pink;
+            transition: width 2s;
+         }
+         #contenedor div:nth-child(5):hover{
+             width: 300px;
+         }
+         </style>
+    </head>
+
+    <body>
+        <div id="contenedor">
+            <div> a</div>
+            <div> b</div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            
